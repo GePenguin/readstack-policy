@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReadStack signed policy payload v1",
+  "description": "Sign these exact UTF-8 bytes with Ed25519. The App enforces a 524288-byte maximum, strict UTF-8, unique JSON keys, depth, the exact configured source and manifest semantics. JSON Schema does not replace signature verification or the Dart validator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "purpose", "source", "manifest"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "purpose": {"const": "readstack-content-restrictions"},
+    "source": {"const": "https://api.github.com/repos/GePenguin/readstack-policy/contents/policy/restrictions.signed.json?ref=main"},
+    "manifest": {"$ref": "manifest-v1.schema.json"}
+  }
+}

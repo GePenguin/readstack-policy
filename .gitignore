@@ -1,0 +1,36 @@
+# This is defense in depth. Keep every private key outside every Git checkout.
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.gpg
+*.asc
+*private-key*
+*private_key*
+*secret-key*
+*secret_key*
+private/
+secrets/
+.secrets/
+.env
+.env.*
+!.env.example
+
+# Temporary signing output is not the published signed JSON envelope.
+.signing/
+.readstack-policy-*/
+tmp/
+temp/
+*.signature.bin
+signature.bin
+*.sig.tmp
+*.tmp
+*.bak
+*.zip
+*.7z
+
+# Public-key documentation and approved public keys are intentionally allowed.
+.DS_Store
+Thumbs.db

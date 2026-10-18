@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "purpose": "readstack-content-restrictions",
+  "source": "https://api.github.com/repos/GePenguin/readstack-policy/contents/policy/restrictions.signed.json?ref=main",
+  "manifest": {
+    "schemaVersion": 1,
+    "revision": 2,
+    "rules": [],
+    "revokedRuleIds": []
+  }
+}
